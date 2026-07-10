@@ -67,31 +67,45 @@ with left:
     lang = st.radio("Report language", ["Eng", "Kor"], horizontal=True,
                     help="Sets the filename prefix (Eng- / Kor-).")
 
-    try:
-        bundle, docx, prev = build(intake_text or "", lang)
-    except Exception as exc:                       # never crash the whole page
-        st.error("Could not process this intake: %s" % exc)
-        st.stop()
+    # ---- explicit RUN button: report is generated only when this is clicked ----
+    run = st.button("▶  Generate Report", type="primary", use_container_width=True)
+    if run:
+        st.session_state["gen_sig"] = (intake_text or "", lang)
+    # show the loaded sample on first visit so the screen isn't empty
+    if "gen_sig" not in st.session_state:
+        st.session_state["gen_sig"] = (intake_text or "", lang)
 
-    student, data, profile = bundle["student"], bundle["data"], bundle["profile"]
+    sig = st.session_state.get("gen_sig")
+    bundle = docx = prev = None
+    if sig and sig[0].strip():
+        try:
+            bundle, docx, prev = build(sig[0], sig[1])
+        except Exception as exc:                   # never crash the whole page
+            st.error("Could not process this intake: %s" % exc)
 
-    nc = data["national_counts"]
-    st.caption("Home state: **%s** · strength index **%d/100** · test **%s** · "
-               "national pool tiered → Reach %d / Match %d / Safety %d"
-               % (profile["home_state_name"] or "?", round(profile["S"]),
-                  profile["test_display"], nc["reach"], nc["match"], nc["safety"]))
-
-    st.markdown("#### Parsed profile")
-    st.table({"Field": [k for k, _ in student["info"]],
-              "Value": [v for _, v in student["info"]]})
-
-    st.markdown('<span class="ep-file">%s</span>' % student["output_name"], unsafe_allow_html=True)
-    st.download_button("⬇  Download .docx", data=docx, file_name=student["output_name"],
-                       mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                       use_container_width=True, type="primary")
-    st.caption("Every college list, probability, and section note is generated from this profile — "
-               "home-state schools are auto-excluded from the national list and become the in-state section.")
+    if bundle:
+        student, data, profile = bundle["student"], bundle["data"], bundle["profile"]
+        nc = data["national_counts"]
+        st.caption("Home state: **%s** · strength index **%d/100** · test **%s** · "
+                   "national pool tiered → Reach %d / Match %d / Safety %d"
+                   % (profile["home_state_name"] or "?", round(profile["S"]),
+                      profile["test_display"], nc["reach"], nc["match"], nc["safety"]))
+        st.markdown("#### Parsed profile")
+        st.table({"Field": [k for k, _ in student["info"]],
+                  "Value": [v for _, v in student["info"]]})
+        st.markdown('<span class="ep-file">%s</span>' % student["output_name"], unsafe_allow_html=True)
+        st.download_button("⬇  Download .docx", data=docx, file_name=student["output_name"],
+                           mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                           use_container_width=True)
+        st.caption("Every college list, probability, and section note is generated from this profile — "
+                   "home-state schools are auto-excluded from the national list and become the in-state section.")
+    else:
+        st.info("Paste the student's intake above, choose the language, then click "
+                "**▶ Generate Report**.")
 
 with right:
     st.markdown("#### Live preview")
-    components.html(prev, height=1500, scrolling=True)
+    if prev:
+        components.html(prev, height=1500, scrolling=True)
+    else:
+        st.caption("The report preview will appear here after you click ▶ Generate Report.")
