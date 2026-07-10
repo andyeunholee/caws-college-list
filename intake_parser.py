@@ -166,6 +166,9 @@ def build_student(f, *, grade="12th Grade (Senior)", cycle_years=None, today=Non
     """
     today = today or datetime.date.today()
     cycle_years = cycle_years or _current_cycle(today)
+    kor = lang == "Kor"
+    if grade == "12th Grade (Senior)" and kor:
+        grade = "12학년 (졸업반)"
     name = (f.get("name") or "Student").strip()
 
     # --- SAT ---------------------------------------------------------------
@@ -180,35 +183,41 @@ def build_student(f, *, grade="12th Grade (Senior)", cycle_years=None, today=Non
     # --- advanced courses --------------------------------------------------
     n_adv = _int(f.get("advanced"))
     if n_adv == 0:
-        advanced = "0 (no AP / IB / DE coursework)"
+        advanced = "0 (AP/IB/DE 없음)" if kor else "0 (no AP / IB / DE coursework)"
     elif n_adv is not None:
-        advanced = f"{n_adv} (AP / IB / DE)"
+        advanced = (f"{n_adv}개 (AP/IB/DE)" if kor else f"{n_adv} (AP / IB / DE)")
     else:
         advanced = f.get("advanced", "N/A") or "N/A"
 
     # --- leadership --------------------------------------------------------
     n_lead = _int(f.get("leadership"))
     if n_lead is not None:
-        advanced_plural = "position" if n_lead == 1 else "positions"
-        leadership = f"{n_lead} leadership {advanced_plural}"
+        if kor:
+            leadership = f"리더십 {n_lead}개"
+        else:
+            leadership = f"{n_lead} leadership {'position' if n_lead == 1 else 'positions'}"
     else:
         leadership = f.get("leadership", "N/A") or "N/A"
 
     # --- community service -------------------------------------------------
     n_serv = _int(f.get("service"))
-    service = f"~{n_serv} hours" if n_serv is not None else (f.get("service") or "N/A")
+    if n_serv is not None:
+        service = f"약 {n_serv}시간" if kor else f"~{n_serv} hours"
+    else:
+        service = f.get("service") or "N/A"
 
     # --- citizenship -------------------------------------------------------
     cit = f.get("citizen", "")
     if "yes" in cit.lower() or "u.s" in cit.lower() or "citizen" in cit.lower():
-        citizen = "U.S. Citizen"
+        citizen = "미국 시민권자" if kor else "U.S. Citizen"
     else:
         citizen = cit.strip() or "N/A"
 
     # --- misc text fields --------------------------------------------------
     early = f.get("early", "")
-    early = "Undecided (ED / EA / REA)" if (_blank(early) or "undecid" in early.lower()) else early
-    awards = "None reported" if _blank(f.get("awards")) else f["awards"].strip()
+    if _blank(early) or "undecid" in early.lower():
+        early = "미정 (ED/EA/REA)" if kor else "Undecided (ED / EA / REA)"
+    awards = ("보고된 사항 없음" if kor else "None reported") if _blank(f.get("awards")) else f["awards"].strip()
     essays = f.get("essays", "")
     essays = "N/A" if _blank(essays) else re.sub(r"\s-\s", " — ", essays).strip()
     _slash = lambda v: re.sub(r"\s*/\s*", " / ", v).strip()
@@ -225,9 +234,10 @@ def build_student(f, *, grade="12th Grade (Senior)", cycle_years=None, today=Non
     safe_name = re.sub(r'[\\/:*?"<>|]', "", name)
     return {
         "name": name,
-        "cycle_line": f"{cycle_years} Application Cycle · {grade}",
+        "cycle_line": (f"{cycle_years} 지원 사이클 · {grade}" if kor
+                       else f"{cycle_years} Application Cycle · {grade}"),
         "home_state": home_state,
-        "footer": f"{name}  ·  {cycle_years}  ·  CONFIDENTIAL  ·  ",
+        "footer": (f"{name}  ·  {cycle_years}  ·  {'대외비' if kor else 'CONFIDENTIAL'}  ·  "),
         "output_name": f"{lang}-{safe_name}_College_List_Est._Admit_Rate_{today:%m.%d.%Y}.docx",
         "info": [
             ("Name", name),

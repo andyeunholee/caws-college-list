@@ -285,12 +285,12 @@ class ReportBuilder:
                 _run(p, text, bold=bold, color=color, size=size)
         return tbl
 
-    def tier_badges(self):
+    def tier_badges(self, labels=("Reach  ·  Est. ≤ 20%", "Match  ·  Est. 21–55%", "Safety  ·  Est. ≥ 60%")):
         tbl = self._new_table(1, [3120, 3120, 3120])
         _tbl_borders(tbl, none_all=True, inside_v_white=True)
-        specs = [("Reach  ·  Est. ≤ 20%", RED, "F3E7E9"),
-                 ("Match  ·  Est. 21–55%", GOLD, "FBF1DD"),
-                 ("Safety  ·  Est. ≥ 60%", GREEN, "E7F1E8")]
+        specs = [(labels[0], RED, "F3E7E9"),
+                 (labels[1], GOLD, "FBF1DD"),
+                 (labels[2], GREEN, "E7F1E8")]
         for cell, (label, color, bg) in zip(tbl.rows[0].cells, specs):
             _clear_cell(cell)
             _cell_left_border(cell, color, 24)
@@ -305,7 +305,7 @@ class ReportBuilder:
         _run(p, "  " + text, bold=True, color=WHITE, size=24)
 
     # -- the college list tables (No. / College / State / Est.) --------------
-    def list_table(self, tier, rows):
+    def list_table(self, tier, rows, headers=("No.", "College", "State", "Est. Admit Probability")):
         """rows: list of (no, college, state, prob)."""
         t = TIER[tier]
         widths = [560, 5600, 800, 2400]
@@ -314,9 +314,8 @@ class ReportBuilder:
         # header
         hdr = tbl.rows[0]
         _keep_header(hdr)
-        for cell, (label, jc) in zip(hdr.cells,
-                [("No.", "center"), ("College", "left"),
-                 ("State", "center"), ("Est. Admit Probability", "center")]):
+        _jc = ("center", "left", "center", "center")
+        for cell, (label, jc) in zip(hdr.cells, zip(headers, _jc)):
             _clear_cell(cell); _shade(cell, t["head"]); _vcenter(cell)
             _cell_margins(cell, top=60, left=90, bottom=60, right=90)
             p = cell.add_paragraph()
@@ -368,7 +367,9 @@ class ReportBuilder:
         return tbl
 
     # -- title block ---------------------------------------------------------
-    def title_block(self, student_name, cycle_line):
+    def title_block(self, student_name, cycle_line,
+                    subtitle="College Admissions Strategy Report",
+                    title="Comprehensive College Admissions Strategy Report"):
         # 1. ELITE PREP (letter-spaced)
         p = _para(self.doc, after=0, before=600, align="left")
         r = _run(p, "ELITE PREP", bold=True, color=NAVY, size=30)
@@ -376,14 +377,13 @@ class ReportBuilder:
         # 2. sub-title with gold underline
         p = _para(self.doc, after=40, align="left",
                   bottom_border=("B7791F", 14, 6))
-        _run(p, "College Admissions Strategy Report", bold=True, color=GRAY, size=22)
+        _run(p, subtitle, bold=True, color=GRAY, size=22)
         # 3. spacer
         p = _para(self.doc, after=260)
         _run(p, "\n", color=TEXT, size=20)
         # 4. big title
         p = _para(self.doc, after=60)
-        _run(p, "Comprehensive College Admissions Strategy Report",
-             bold=True, color=NAVY, size=48)
+        _run(p, title, bold=True, color=NAVY, size=48)
         # 5. student name
         p = _para(self.doc, after=60)
         _run(p, student_name, bold=True, color=RED, size=34)

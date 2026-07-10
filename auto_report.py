@@ -30,14 +30,14 @@ def load_db(path=None):
     return _DB
 
 
-def _patch_info(student, profile):
+def _patch_info(student, profile, lang):
     """Show the real test score (incl. ACT) on the profile table."""
+    disp = profile["test_display"]
+    if lang == "Kor":
+        disp = disp.replace("SAT eq.", "SAT 환산").replace(" / Math ", " / 수학 ")
     info = []
     for label, value in student["info"]:
-        if label == "SAT":
-            info.append(("Test Score", profile["test_display"]))
-        else:
-            info.append((label, value))
+        info.append(("Test Score", disp) if label == "SAT" else (label, value))
     student["info"] = info
     return student
 
@@ -47,7 +47,7 @@ def generate(intake_text, lang="Eng", db=None):
     fields = parse_intake(intake_text or "")
     profile = build_profile(fields, intake_text or "")
     student = build_student(fields, lang=lang)
-    _patch_info(student, profile)
+    _patch_info(student, profile, lang)
 
     lists = select_lists(profile, db)
     data = {
@@ -56,13 +56,13 @@ def generate(intake_text, lang="Eng", db=None):
         "instate_state_name": lists["instate_state_name"],
         "national_counts": lists["national_counts"],
     }
-    narr = build_narrative(profile, lists)
-    return {"student": student, "data": data, "narr": narr, "profile": profile}
+    narr = build_narrative(profile, lists, lang)
+    return {"student": student, "data": data, "narr": narr, "profile": profile, "lang": lang}
 
 
 def docx_bytes(bundle):
-    return assemble_bytes(bundle["student"], bundle["data"], bundle["narr"])
+    return assemble_bytes(bundle["student"], bundle["data"], bundle["narr"], bundle.get("lang", "Eng"))
 
 
 def preview_html(bundle):
-    return _preview(bundle["student"], bundle["data"], bundle["narr"])
+    return _preview(bundle["student"], bundle["data"], bundle["narr"], bundle.get("lang", "Eng"))

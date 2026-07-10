@@ -8,6 +8,7 @@ preview and the downloaded Word file always match.
 
 import html as _h
 from report_engine import NAVY, RED, GOLD, GREEN, TEXT, GRAY
+from i18n import T
 
 HEX = lambda c: "#" + c
 KIND = {RED: "red", GOLD: "gold", GREEN: "green", NAVY: "navy", GRAY: "gray",
@@ -32,24 +33,24 @@ def _callout(kind, paras):
     return '<div class="callout %s">%s</div>' % (kind, inner)
 
 
-def _ltable(tier, rows):
+def _ltable(tier, rows, th, none_txt):
     h = ['<div class="tblwrap"><table class="ltable %s"><tr>'
-         '<th>No.</th><th class="l">College</th><th>State</th>'
-         '<th>Est. Admit Probability</th></tr>' % tier]
+         '<th>%s</th><th class="l">%s</th><th>%s</th><th>%s</th></tr>'
+         % (tier, _h.escape(th[0]), _h.escape(th[1]), _h.escape(th[2]), _h.escape(th[3]))]
     for i, (c, s, p) in enumerate(rows, 1):
         h.append('<tr><td class="num">%d</td><td>%s</td><td class="c">%s</td>'
                  '<td class="prob">%s</td></tr>' % (i, _h.escape(c), _h.escape(s), _h.escape(p)))
     if not rows:
-        h.append('<tr><td colspan="4" style="color:#888">— none at this tier —</td></tr>')
+        h.append('<tr><td colspan="4" style="color:#888">%s</td></tr>' % _h.escape(none_txt))
     h.append("</table></div>")
     return "".join(h)
 
 
-def _tiered(tiers, labels):
+def _tiered(tiers, labels, L):
     out = []
     for key, label in zip(("reach", "match", "safety"), labels):
         out.append('<div class="tierbar %s">%s</div>' % (key, _h.escape(label)))
-        out.append(_ltable(key, tiers.get(key, [])))
+        out.append(_ltable(key, tiers.get(key, []), L["th_list"], L["none_tier"]))
     return "".join(out)
 
 
@@ -100,46 +101,50 @@ table.ltable.navy tr:nth-child(even) td{background:#f4f4f4}
 """
 
 
-def preview_html(student, data, narr):
+def preview_html(student, data, narr, lang="Eng"):
+    L = T(lang)
     h = ['<!doctype html><html><head><meta charset="utf-8"><style>', CSS,
          '</style></head><body><div class="paper">']
     h.append('<div class="eyebrow">ELITE PREP</div>')
-    h.append('<div class="eyebrow-sub">College Admissions Strategy Report</div>')
-    h.append('<h1>Comprehensive College Admissions Strategy Report</h1>')
+    h.append('<div class="eyebrow-sub">%s</div>' % _h.escape(L["subtitle"]))
+    h.append('<h1>%s</h1>' % _h.escape(L["title"]))
     h.append('<div class="p-name">%s</div>' % _h.escape(student["name"]))
     h.append('<div class="p-cycle">%s</div>' % _h.escape(student["cycle_line"]))
     h.append('<table class="itable">')
     for k, v in student["info"]:
-        h.append('<tr><td class="k">%s</td><td class="v">%s</td></tr>' % (_h.escape(k), _h.escape(v)))
+        h.append('<tr><td class="k">%s</td><td class="v">%s</td></tr>'
+                 % (_h.escape(L["info"].get(k, k)), _h.escape(v)))
     h.append("</table>")
     h.append(_callout("gold", narr["note"]))
 
-    h.append('<h2>1.&nbsp; Methodology · Evaluation Criteria</h2>')
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][1]))
     h.append('<p class="body">%s</p>' % _h.escape(narr["methodology"]))
     h.append('<p class="body">%s</p>' % _runs(narr["tier_def"]))
-    h.append('<div class="badges"><div class="badge reach">Reach · Est. ≤ 20%</div>'
-             '<div class="badge match">Match · Est. 21–55%</div>'
-             '<div class="badge safety">Safety · Est. ≥ 60%</div></div>')
+    bd = L["badges"]
+    h.append('<div class="badges"><div class="badge reach">%s</div>'
+             '<div class="badge match">%s</div><div class="badge safety">%s</div></div>'
+             % (_h.escape(bd[0]), _h.escape(bd[1]), _h.escape(bd[2])))
     h.append(_callout("navy", narr["testing"]))
     h.append(_callout("red", narr["core"]))
 
-    h.append('<h2>2.&nbsp; National University List</h2>')
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][2]))
     h.append('<p class="body">%s</p>' % _h.escape(narr["national_intro"]))
-    h.append(_tiered(data["national"], ["REACH (Est. Admit Probability ≤ 20%)",
-             "MATCH (Est. Admit Probability 21–55%)", "SAFETY (Est. Admit Probability ≥ 60%)"]))
+    h.append(_tiered(data["national"], L["tier_long"], L))
 
-    h.append('<h2>3.&nbsp; In-State Universities · %s</h2>' % _h.escape(data["instate_state_name"]))
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][3] % data["instate_state_name"]))
     h.append('<p class="body">%s</p>' % _h.escape(narr["instate_intro"]))
-    h.append(_tiered(data["instate"], ["REACH", "MATCH", "SAFETY"]))
+    h.append(_tiered(data["instate"], L["tier_short"], L))
 
-    h.append('<h2>4.&nbsp; Liberal Arts College (LAC) List</h2>')
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][4]))
     h.append('<p class="body">%s</p>' % _h.escape(narr["lac_intro"]))
-    h.append(_tiered(data["lac"], ["REACH", "MATCH", "SAFETY"]))
+    h.append(_tiered(data["lac"], L["tier_short"], L))
 
-    h.append('<h2>5.&nbsp; Early Decision (ED) Strategy · RD vs ED Comparison</h2>')
+    te = L["th_ed"]
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][5]))
     h.append('<p class="body">%s</p>' % _runs(narr["ed_intro"]))
-    h.append('<div class="tblwrap"><table class="ltable navy"><tr><th class="l">College</th>'
-             '<th>State</th><th>RD Prob.</th><th>ED Prob.</th><th>Recommendation</th></tr>')
+    h.append('<div class="tblwrap"><table class="ltable navy"><tr><th class="l">%s</th>'
+             '<th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr>'
+             % tuple(_h.escape(x) for x in te))
     for r in data["ed"]:
         h.append('<tr><td><b>%s</b></td><td class="c"><b>%s</b></td><td class="c prob-gray">%s</td>'
                  '<td class="c prob-green">%s</td><td class="c rec">%s</td></tr>'
@@ -147,24 +152,27 @@ def preview_html(student, data, narr):
     h.append("</table></div>")
     h.append(_callout("navy", narr["ed_rec"]))
 
-    h.append('<h2>6.&nbsp; Early Action (EA / REA) Strategy</h2>')
+    ta = L["th_ea"]
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][6]))
     h.append('<p class="body">%s</p>' % _runs(narr["ea_intro"]))
-    h.append('<div class="tblwrap"><table class="ltable navy"><tr><th class="l">College</th>'
-             '<th>State</th><th>EA Prob.</th><th class="l">Notes (Policy / Caution)</th></tr>')
+    h.append('<div class="tblwrap"><table class="ltable navy"><tr><th class="l">%s</th>'
+             '<th>%s</th><th>%s</th><th class="l">%s</th></tr>' % tuple(_h.escape(x) for x in ta))
     for r in data["ea"]:
         h.append('<tr><td><b>%s</b></td><td class="c"><b>%s</b></td><td class="c prob-navy">%s</td>'
                  '<td class="prob-gray">%s</td></tr>' % tuple(_h.escape(x) for x in r))
     h.append("</table></div>")
 
-    h.append('<h2>7.&nbsp; 12th-Grade Action Plan (From Now Through Application)</h2>')
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][7]))
     h.append('<p class="body">%s</p>' % _h.escape(narr["action_intro"]))
     for accent_tier, box in narr["steps"]:
         h.append(_callout(KIND[accent_tier], box))
 
-    h.append('<h2>8.&nbsp; Abbreviations · Full Description</h2>')
-    h.append('<p class="body">Full names and meanings of the abbreviations used in this report and its key notes.</p>')
+    tb = L["th_abbr"]
+    h.append('<h2>%s</h2>' % _h.escape(L["sec"][8]))
+    h.append('<p class="body">%s</p>' % _h.escape(L["abbr_intro"]))
     h.append('<div class="tblwrap"><table class="ltable navy"><tr>'
-             '<th class="l">Abbreviation</th><th class="l">Full Description</th></tr>')
+             '<th class="l">%s</th><th class="l">%s</th></tr>'
+             % (_h.escape(tb[0]), _h.escape(tb[1])))
     for abbr, desc in narr["abbreviations"]:
         h.append('<tr><td><b style="color:#1F3864">%s</b></td><td><b>%s</b></td></tr>'
                  % (_h.escape(abbr), _h.escape(desc)))
