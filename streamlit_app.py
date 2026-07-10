@@ -19,6 +19,27 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 st.set_page_config(page_title="ELITE PREP · College Report Studio",
                    page_icon="🎓", layout="wide")
 
+# Expose the Anthropic key (set in Streamlit Secrets) to the SDK via env var.
+# Streamlit Cloud also mirrors secrets into environment variables, so prefer that
+# and only touch st.secrets when a secrets.toml actually exists (avoids a noisy
+# "no secrets found" box locally / before the key is configured).
+def _load_api_key():
+    from pathlib import Path
+    if os.environ.get("ANTHROPIC_API_KEY", "").strip():
+        return
+    if not any(p.exists() for p in (Path.cwd() / ".streamlit" / "secrets.toml",
+                                    Path.home() / ".streamlit" / "secrets.toml")):
+        return
+    try:
+        if "ANTHROPIC_API_KEY" in st.secrets:
+            os.environ["ANTHROPIC_API_KEY"] = str(st.secrets["ANTHROPIC_API_KEY"])
+    except Exception:
+        pass
+
+
+_load_api_key()
+AI_READY = bool(os.environ.get("ANTHROPIC_API_KEY", "").strip())
+
 
 @st.cache_data
 def load_sample():
@@ -30,8 +51,8 @@ def load_sample():
 
 
 @st.cache_data(show_spinner=False)
-def build(intake_text, lang):
-    bundle = auto_report.generate(intake_text, lang=lang)
+def build(intake_text, lang, use_ai):
+    bundle = auto_report.generate(intake_text, lang=lang, use_ai=use_ai)
     return bundle, auto_report.docx_bytes(bundle), auto_report.preview_html(bundle)
 
 
@@ -64,32 +85,41 @@ with left:
         st.session_state["intake"] = ""
     intake_text = st.text_area("Paste the student's intake email (Key: Value lines)",
                                key="intake", height=240, label_visibility="collapsed")
-    lang = st.radio("Report language", ["Eng", "Kor"], horizontal=True,
-                    help="Sets the filename prefix (Eng- / Kor-).")
+    lc, rc = st.columns([1, 1])
+    lang = lc.radio("Report language", ["Eng", "Kor"], horizontal=True,
+                    help="Sets the report language and the filename prefix (Eng- / Kor-).")
+    use_ai = rc.checkbox("AI-enhanced commentary", value=AI_READY, disabled=not AI_READY,
+                         help=("Claude writes the section commentary (lists & probabilities stay "
+                               "code-computed). Requires an ANTHROPIC_API_KEY in Streamlit Secrets."
+                               if AI_READY else
+                               "Add ANTHROPIC_API_KEY in Streamlit Secrets to enable AI commentary."))
 
     # ---- explicit RUN button: report is generated only when this is clicked ----
     run = st.button("▶  Generate Report", type="primary", use_container_width=True)
     if run:
-        st.session_state["gen_sig"] = (intake_text or "", lang)
+        st.session_state["gen_sig"] = (intake_text or "", lang, use_ai)
     # show the loaded sample on first visit so the screen isn't empty
     if "gen_sig" not in st.session_state:
-        st.session_state["gen_sig"] = (intake_text or "", lang)
+        st.session_state["gen_sig"] = (intake_text or "", lang, use_ai)
 
     sig = st.session_state.get("gen_sig")
     bundle = docx = prev = None
     if sig and sig[0].strip():
+        spinner = "Writing AI commentary…" if sig[2] else "Generating…"
         try:
-            bundle, docx, prev = build(sig[0], sig[1])
+            with st.spinner(spinner):
+                bundle, docx, prev = build(sig[0], sig[1], sig[2])
         except Exception as exc:                   # never crash the whole page
             st.error("Could not process this intake: %s" % exc)
 
     if bundle:
         student, data, profile = bundle["student"], bundle["data"], bundle["profile"]
         nc = data["national_counts"]
+        mode = "🟢 AI commentary" if bundle.get("narr_source") == "ai" else "⚪ Template commentary"
         st.caption("Home state: **%s** · strength index **%d/100** · test **%s** · "
-                   "national pool tiered → Reach %d / Match %d / Safety %d"
+                   "Reach %d / Match %d / Safety %d · %s"
                    % (profile["home_state_name"] or "?", round(profile["S"]),
-                      profile["test_display"], nc["reach"], nc["match"], nc["safety"]))
+                      profile["test_display"], nc["reach"], nc["match"], nc["safety"], mode))
         st.markdown("#### Parsed profile")
         st.table({"Field": [k for k, _ in student["info"]],
                   "Value": [v for _, v in student["info"]]})

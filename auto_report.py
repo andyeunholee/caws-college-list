@@ -17,6 +17,7 @@ from scoring import build_profile, select_lists
 from narrative import build_narrative
 from assemble import assemble_bytes
 from preview_html import preview_html as _preview
+import llm_narrative
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 _DB = None
@@ -42,7 +43,7 @@ def _patch_info(student, profile, lang):
     return student
 
 
-def generate(intake_text, lang="Eng", db=None):
+def generate(intake_text, lang="Eng", db=None, use_ai=True):
     db = db or load_db()
     fields = parse_intake(intake_text or "")
     profile = build_profile(fields, intake_text or "")
@@ -56,8 +57,16 @@ def generate(intake_text, lang="Eng", db=None):
         "instate_state_name": lists["instate_state_name"],
         "national_counts": lists["national_counts"],
     }
-    narr = build_narrative(profile, lists, lang)
-    return {"student": student, "data": data, "narr": narr, "profile": profile, "lang": lang}
+    narr = build_narrative(profile, lists, lang)          # deterministic template baseline
+    source = "template"
+    if use_ai and llm_narrative.available():
+        try:
+            narr = llm_narrative.enhance(profile, lists, narr, lang)   # Claude-written prose
+            source = "ai"
+        except Exception:
+            source = "template"                            # safe fallback on any error
+    return {"student": student, "data": data, "narr": narr, "profile": profile,
+            "lang": lang, "narr_source": source}
 
 
 def docx_bytes(bundle):
