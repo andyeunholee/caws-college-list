@@ -1,0 +1,2950 @@
+{
+ "national": [
+  {
+   "name": "Harvard University",
+   "state": "MA",
+   "admit": 3,
+   "ed": false,
+   "ea": "REA",
+   "test": "required"
+  },
+  {
+   "name": "Yale University",
+   "state": "CT",
+   "admit": 5,
+   "ed": false,
+   "ea": "REA",
+   "test": "required"
+  },
+  {
+   "name": "Princeton University",
+   "state": "NJ",
+   "admit": 4,
+   "ed": false,
+   "ea": "REA",
+   "test": "optional"
+  },
+  {
+   "name": "Stanford University",
+   "state": "CA",
+   "admit": 4,
+   "ed": false,
+   "ea": "REA",
+   "test": "required"
+  },
+  {
+   "name": "Massachusetts Institute of Technology",
+   "state": "MA",
+   "admit": 4,
+   "ed": false,
+   "ea": "EA",
+   "test": "required"
+  },
+  {
+   "name": "California Institute of Technology",
+   "state": "CA",
+   "admit": 3,
+   "ed": false,
+   "ea": "EA",
+   "test": "required"
+  },
+  {
+   "name": "Columbia University",
+   "state": "NY",
+   "admit": 4,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Pennsylvania",
+   "state": "PA",
+   "admit": 6,
+   "ed": true,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Brown University",
+   "state": "RI",
+   "admit": 5,
+   "ed": true,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Dartmouth College",
+   "state": "NH",
+   "admit": 6,
+   "ed": true,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Cornell University",
+   "state": "NY",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Duke University",
+   "state": "NC",
+   "admit": 6,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Johns Hopkins University",
+   "state": "MD",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Northwestern University",
+   "state": "IL",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Chicago",
+   "state": "IL",
+   "admit": 5,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Vanderbilt University",
+   "state": "TN",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rice University",
+   "state": "TX",
+   "admit": 8,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Washington University in St. Louis",
+   "state": "MO",
+   "admit": 12,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Emory University",
+   "state": "GA",
+   "admit": 11,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Notre Dame",
+   "state": "IN",
+   "admit": 12,
+   "ed": false,
+   "ea": "REA",
+   "test": "optional"
+  },
+  {
+   "name": "Georgetown University",
+   "state": "DC",
+   "admit": 12,
+   "ed": false,
+   "ea": "REA",
+   "test": "required"
+  },
+  {
+   "name": "Carnegie Mellon University",
+   "state": "PA",
+   "admit": 11,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Southern California",
+   "state": "CA",
+   "admit": 10,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "New York University",
+   "state": "NY",
+   "admit": 8,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Tufts University",
+   "state": "MA",
+   "admit": 10,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Michigan",
+   "state": "MI",
+   "admit": 18,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of California, Berkeley",
+   "state": "CA",
+   "admit": 11,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Los Angeles",
+   "state": "CA",
+   "admit": 9,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, San Diego",
+   "state": "CA",
+   "admit": 24,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Davis",
+   "state": "CA",
+   "admit": 37,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Irvine",
+   "state": "CA",
+   "admit": 21,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Santa Barbara",
+   "state": "CA",
+   "admit": 26,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Santa Cruz",
+   "state": "CA",
+   "admit": 47,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Riverside",
+   "state": "CA",
+   "admit": 69,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "University of California, Merced",
+   "state": "CA",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "San Diego State University",
+   "state": "CA",
+   "admit": 35,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "California Polytechnic State University, San Luis Obispo",
+   "state": "CA",
+   "admit": 30,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "San Jose State University",
+   "state": "CA",
+   "admit": 77,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "California State University, Long Beach",
+   "state": "CA",
+   "admit": 40,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "California State University, Fullerton",
+   "state": "CA",
+   "admit": 69,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "California State University, Northridge",
+   "state": "CA",
+   "admit": 91,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "California State University, Los Angeles",
+   "state": "CA",
+   "admit": 91,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "Santa Clara University",
+   "state": "CA",
+   "admit": 47,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Pepperdine University",
+   "state": "CA",
+   "admit": 49,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of San Diego",
+   "state": "CA",
+   "admit": 54,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Loyola Marymount University",
+   "state": "CA",
+   "admit": 51,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Chapman University",
+   "state": "CA",
+   "admit": 60,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of the Pacific",
+   "state": "CA",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Alabama",
+   "state": "AL",
+   "admit": 80,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Auburn University",
+   "state": "AL",
+   "admit": 44,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Alabama at Birmingham",
+   "state": "AL",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Alaska Fairbanks",
+   "state": "AK",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Alaska Anchorage",
+   "state": "AK",
+   "admit": 77,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Arizona",
+   "state": "AZ",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Arizona State University",
+   "state": "AZ",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Northern Arizona University",
+   "state": "AZ",
+   "admit": 85,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Arkansas",
+   "state": "AR",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Arkansas State University",
+   "state": "AR",
+   "admit": 69,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Central Arkansas",
+   "state": "AR",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Colorado Boulder",
+   "state": "CO",
+   "admit": 80,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Colorado State University",
+   "state": "CO",
+   "admit": 91,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Denver",
+   "state": "CO",
+   "admit": 66,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Colorado School of Mines",
+   "state": "CO",
+   "admit": 60,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Colorado Denver",
+   "state": "CO",
+   "admit": 72,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Connecticut",
+   "state": "CT",
+   "admit": 55,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Fairfield University",
+   "state": "CT",
+   "admit": 57,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Quinnipiac University",
+   "state": "CT",
+   "admit": 75,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Sacred Heart University",
+   "state": "CT",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Delaware",
+   "state": "DE",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Delaware State University",
+   "state": "DE",
+   "admit": 67,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "George Washington University",
+   "state": "DC",
+   "admit": 49,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "American University",
+   "state": "DC",
+   "admit": 64,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Howard University",
+   "state": "DC",
+   "admit": 35,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Catholic University of America",
+   "state": "DC",
+   "admit": 85,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Florida",
+   "state": "FL",
+   "admit": 23,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Florida State University",
+   "state": "FL",
+   "admit": 25,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "University of Central Florida",
+   "state": "FL",
+   "admit": 41,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "University of South Florida",
+   "state": "FL",
+   "admit": 44,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Florida International University",
+   "state": "FL",
+   "admit": 64,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Florida Atlantic University",
+   "state": "FL",
+   "admit": 73,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "University of Miami",
+   "state": "FL",
+   "admit": 19,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Georgia",
+   "state": "GA",
+   "admit": 37,
+   "ed": false,
+   "ea": "EA",
+   "test": "required"
+  },
+  {
+   "name": "Georgia Institute of Technology",
+   "state": "GA",
+   "admit": 16,
+   "ed": false,
+   "ea": "EA",
+   "test": "required"
+  },
+  {
+   "name": "Georgia State University",
+   "state": "GA",
+   "admit": 67,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Kennesaw State University",
+   "state": "GA",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Mercer University",
+   "state": "GA",
+   "admit": 68,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Hawaii at Manoa",
+   "state": "HI",
+   "admit": 58,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hawaii Pacific University",
+   "state": "HI",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Idaho",
+   "state": "ID",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Boise State University",
+   "state": "ID",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Idaho State University",
+   "state": "ID",
+   "admit": 99,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Illinois Urbana-Champaign",
+   "state": "IL",
+   "admit": 45,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Illinois State University",
+   "state": "IL",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Illinois Chicago",
+   "state": "IL",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Loyola University Chicago",
+   "state": "IL",
+   "admit": 68,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "DePaul University",
+   "state": "IL",
+   "admit": 70,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Illinois Institute of Technology",
+   "state": "IL",
+   "admit": 61,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Northern Illinois University",
+   "state": "IL",
+   "admit": 54,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Purdue University",
+   "state": "IN",
+   "admit": 50,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Indiana University Bloomington",
+   "state": "IN",
+   "admit": 80,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Ball State University",
+   "state": "IN",
+   "admit": 77,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Butler University",
+   "state": "IN",
+   "admit": 84,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Iowa",
+   "state": "IA",
+   "admit": 86,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Iowa State University",
+   "state": "IA",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Northern Iowa",
+   "state": "IA",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Drake University",
+   "state": "IA",
+   "admit": 70,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Kansas",
+   "state": "KS",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Kansas State University",
+   "state": "KS",
+   "admit": 95,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wichita State University",
+   "state": "KS",
+   "admit": 94,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Kentucky",
+   "state": "KY",
+   "admit": 95,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Louisville",
+   "state": "KY",
+   "admit": 83,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Western Kentucky University",
+   "state": "KY",
+   "admit": 96,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Louisiana State University",
+   "state": "LA",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Tulane University",
+   "state": "LA",
+   "admit": 13,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Louisiana at Lafayette",
+   "state": "LA",
+   "admit": 55,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Loyola University New Orleans",
+   "state": "LA",
+   "admit": 84,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Xavier University of Louisiana",
+   "state": "LA",
+   "admit": 62,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Maine",
+   "state": "ME",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Southern Maine",
+   "state": "ME",
+   "admit": 85,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of New England",
+   "state": "ME",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Maryland, College Park",
+   "state": "MD",
+   "admit": 45,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Maryland, Baltimore County",
+   "state": "MD",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Towson University",
+   "state": "MD",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Loyola University Maryland",
+   "state": "MD",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Morgan State University",
+   "state": "MD",
+   "admit": 74,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Boston University",
+   "state": "MA",
+   "admit": 11,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Boston College",
+   "state": "MA",
+   "admit": 16,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Northeastern University",
+   "state": "MA",
+   "admit": 6,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Massachusetts Amherst",
+   "state": "MA",
+   "admit": 58,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Massachusetts Boston",
+   "state": "MA",
+   "admit": 77,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Massachusetts Lowell",
+   "state": "MA",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Worcester Polytechnic Institute",
+   "state": "MA",
+   "admit": 59,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Brandeis University",
+   "state": "MA",
+   "admit": 39,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Clark University",
+   "state": "MA",
+   "admit": 54,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bentley University",
+   "state": "MA",
+   "admit": 61,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Michigan State University",
+   "state": "MI",
+   "admit": 83,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Wayne State University",
+   "state": "MI",
+   "admit": 74,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Western Michigan University",
+   "state": "MI",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Central Michigan University",
+   "state": "MI",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Grand Valley State University",
+   "state": "MI",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Minnesota Twin Cities",
+   "state": "MN",
+   "admit": 75,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of St. Thomas",
+   "state": "MN",
+   "admit": 83,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Minnesota State University, Mankato",
+   "state": "MN",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Mississippi",
+   "state": "MS",
+   "admit": 97,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Mississippi State University",
+   "state": "MS",
+   "admit": 98,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Southern Mississippi",
+   "state": "MS",
+   "admit": 98,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Jackson State University",
+   "state": "MS",
+   "admit": 62,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Missouri",
+   "state": "MO",
+   "admit": 81,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Missouri State University",
+   "state": "MO",
+   "admit": 92,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Saint Louis University",
+   "state": "MO",
+   "admit": 74,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Missouri University of Science and Technology",
+   "state": "MO",
+   "admit": 81,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Missouri-Kansas City",
+   "state": "MO",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Montana",
+   "state": "MT",
+   "admit": 94,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Montana State University",
+   "state": "MT",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Nebraska-Lincoln",
+   "state": "NE",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Nebraska Omaha",
+   "state": "NE",
+   "admit": 83,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Creighton University",
+   "state": "NE",
+   "admit": 73,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Nevada, Las Vegas",
+   "state": "NV",
+   "admit": 85,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Nevada, Reno",
+   "state": "NV",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of New Hampshire",
+   "state": "NH",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Southern New Hampshire University",
+   "state": "NH",
+   "admit": 94,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rutgers University-New Brunswick",
+   "state": "NJ",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "New Jersey Institute of Technology",
+   "state": "NJ",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "The College of New Jersey",
+   "state": "NJ",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Stevens Institute of Technology",
+   "state": "NJ",
+   "admit": 40,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Seton Hall University",
+   "state": "NJ",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Montclair State University",
+   "state": "NJ",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rowan University",
+   "state": "NJ",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of New Mexico",
+   "state": "NM",
+   "admit": 61,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "New Mexico State University",
+   "state": "NM",
+   "admit": 63,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Rochester",
+   "state": "NY",
+   "admit": 39,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Syracuse University",
+   "state": "NY",
+   "admit": 52,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Fordham University",
+   "state": "NY",
+   "admit": 54,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Rensselaer Polytechnic Institute",
+   "state": "NY",
+   "admit": 65,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Stony Brook University",
+   "state": "NY",
+   "admit": 49,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University at Buffalo",
+   "state": "NY",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Binghamton University",
+   "state": "NY",
+   "admit": 43,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University at Albany, SUNY",
+   "state": "NY",
+   "admit": 63,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rochester Institute of Technology",
+   "state": "NY",
+   "admit": 71,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Yeshiva University",
+   "state": "NY",
+   "admit": 62,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hofstra University",
+   "state": "NY",
+   "admit": 71,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "St. John's University",
+   "state": "NY",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of North Carolina at Chapel Hill",
+   "state": "NC",
+   "admit": 17,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "North Carolina State University",
+   "state": "NC",
+   "admit": 40,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Wake Forest University",
+   "state": "NC",
+   "admit": 21,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of North Carolina at Charlotte",
+   "state": "NC",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "East Carolina University",
+   "state": "NC",
+   "admit": 92,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Appalachian State University",
+   "state": "NC",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Elon University",
+   "state": "NC",
+   "admit": 74,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "North Carolina Agricultural and Technical State University",
+   "state": "NC",
+   "admit": 60,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of North Dakota",
+   "state": "ND",
+   "admit": 81,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "North Dakota State University",
+   "state": "ND",
+   "admit": 94,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Ohio State University",
+   "state": "OH",
+   "admit": 53,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Cincinnati",
+   "state": "OH",
+   "admit": 86,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Case Western Reserve University",
+   "state": "OH",
+   "admit": 30,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Miami University",
+   "state": "OH",
+   "admit": 89,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Ohio University",
+   "state": "OH",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Kent State University",
+   "state": "OH",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Dayton",
+   "state": "OH",
+   "admit": 72,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bowling Green State University",
+   "state": "OH",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Oklahoma",
+   "state": "OK",
+   "admit": 73,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Oklahoma State University",
+   "state": "OK",
+   "admit": 70,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Tulsa",
+   "state": "OK",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Oregon",
+   "state": "OR",
+   "admit": 86,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Oregon State University",
+   "state": "OR",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Portland State University",
+   "state": "OR",
+   "admit": 95,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Portland",
+   "state": "OR",
+   "admit": 77,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Pittsburgh",
+   "state": "PA",
+   "admit": 67,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Pennsylvania State University",
+   "state": "PA",
+   "admit": 55,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Temple University",
+   "state": "PA",
+   "admit": 80,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Drexel University",
+   "state": "PA",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Villanova University",
+   "state": "PA",
+   "admit": 25,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Lehigh University",
+   "state": "PA",
+   "admit": 29,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Duquesne University",
+   "state": "PA",
+   "admit": 75,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Saint Joseph's University",
+   "state": "PA",
+   "admit": 78,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Rhode Island",
+   "state": "RI",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Providence College",
+   "state": "RI",
+   "admit": 51,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Bryant University",
+   "state": "RI",
+   "admit": 71,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of South Carolina",
+   "state": "SC",
+   "admit": 64,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Clemson University",
+   "state": "SC",
+   "admit": 38,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "College of Charleston",
+   "state": "SC",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Coastal Carolina University",
+   "state": "SC",
+   "admit": 88,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of South Dakota",
+   "state": "SD",
+   "admit": 86,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "South Dakota State University",
+   "state": "SD",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Tennessee, Knoxville",
+   "state": "TN",
+   "admit": 68,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Memphis",
+   "state": "TN",
+   "admit": 95,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Middle Tennessee State University",
+   "state": "TN",
+   "admit": 94,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Belmont University",
+   "state": "TN",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Texas at Austin",
+   "state": "TX",
+   "admit": 31,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Texas A&M University",
+   "state": "TX",
+   "admit": 63,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Houston",
+   "state": "TX",
+   "admit": 66,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Texas Tech University",
+   "state": "TX",
+   "admit": 69,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Texas at Dallas",
+   "state": "TX",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of North Texas",
+   "state": "TX",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Baylor University",
+   "state": "TX",
+   "admit": 57,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Southern Methodist University",
+   "state": "TX",
+   "admit": 51,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Texas Christian University",
+   "state": "TX",
+   "admit": 48,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Trinity University",
+   "state": "TX",
+   "admit": 29,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Texas State University",
+   "state": "TX",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Utah",
+   "state": "UT",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Brigham Young University",
+   "state": "UT",
+   "admit": 67,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Utah State University",
+   "state": "UT",
+   "admit": 91,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Vermont",
+   "state": "VT",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Vermont State University",
+   "state": "VT",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Norwich University",
+   "state": "VT",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Virginia",
+   "state": "VA",
+   "admit": 19,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Virginia Tech",
+   "state": "VA",
+   "admit": 56,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "College of William & Mary",
+   "state": "VA",
+   "admit": 33,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "George Mason University",
+   "state": "VA",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Virginia Commonwealth University",
+   "state": "VA",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "James Madison University",
+   "state": "VA",
+   "admit": 79,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Old Dominion University",
+   "state": "VA",
+   "admit": 92,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hampton University",
+   "state": "VA",
+   "admit": 40,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Washington",
+   "state": "WA",
+   "admit": 43,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Washington State University",
+   "state": "WA",
+   "admit": 81,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Western Washington University",
+   "state": "WA",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Seattle University",
+   "state": "WA",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Gonzaga University",
+   "state": "WA",
+   "admit": 77,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "West Virginia University",
+   "state": "WV",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Marshall University",
+   "state": "WV",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Wisconsin-Madison",
+   "state": "WI",
+   "admit": 43,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Wisconsin-Milwaukee",
+   "state": "WI",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Marquette University",
+   "state": "WI",
+   "admit": 82,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "University of Wisconsin-Eau Claire",
+   "state": "WI",
+   "admit": 87,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Wyoming",
+   "state": "WY",
+   "admit": 96,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Southern University and A&M College",
+   "state": "LA",
+   "admit": 42,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Florida A&M University",
+   "state": "FL",
+   "admit": 36,
+   "ed": false,
+   "ea": null,
+   "test": "required"
+  },
+  {
+   "name": "Prairie View A&M University",
+   "state": "TX",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Clarkson University",
+   "state": "NY",
+   "admit": 76,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Rider University",
+   "state": "NJ",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Hartford",
+   "state": "CT",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Xavier University",
+   "state": "OH",
+   "admit": 82,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Bradley University",
+   "state": "IL",
+   "admit": 75,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Salisbury University",
+   "state": "MD",
+   "admit": 82,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Christopher Newport University",
+   "state": "VA",
+   "admit": 84,
+   "ed": true,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Plymouth State University",
+   "state": "NH",
+   "admit": 90,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Utah Valley University",
+   "state": "UT",
+   "admit": 100,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  }
+ ],
+ "lac": [
+  {
+   "name": "Williams College",
+   "state": "MA",
+   "admit": 9,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Amherst College",
+   "state": "MA",
+   "admit": 9,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Swarthmore College",
+   "state": "PA",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Pomona College",
+   "state": "CA",
+   "admit": 7,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bowdoin College",
+   "state": "ME",
+   "admit": 9,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wellesley College",
+   "state": "MA",
+   "admit": 13,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Middlebury College",
+   "state": "VT",
+   "admit": 11,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Carleton College",
+   "state": "MN",
+   "admit": 17,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Claremont McKenna College",
+   "state": "CA",
+   "admit": 10,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Davidson College",
+   "state": "NC",
+   "admit": 17,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Colby College",
+   "state": "ME",
+   "admit": 8,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bates College",
+   "state": "ME",
+   "admit": 14,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hamilton College",
+   "state": "NY",
+   "admit": 12,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Haverford College",
+   "state": "PA",
+   "admit": 14,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Grinnell College",
+   "state": "IA",
+   "admit": 11,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Vassar College",
+   "state": "NY",
+   "admit": 18,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Colgate University",
+   "state": "NY",
+   "admit": 12,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wesleyan University",
+   "state": "CT",
+   "admit": 15,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Smith College",
+   "state": "MA",
+   "admit": 23,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Barnard College",
+   "state": "NY",
+   "admit": 8,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Harvey Mudd College",
+   "state": "CA",
+   "admit": 10,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Washington and Lee University",
+   "state": "VA",
+   "admit": 17,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bryn Mawr College",
+   "state": "PA",
+   "admit": 31,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Colorado College",
+   "state": "CO",
+   "admit": 14,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Macalester College",
+   "state": "MN",
+   "admit": 30,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Oberlin College",
+   "state": "OH",
+   "admit": 33,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Kenyon College",
+   "state": "OH",
+   "admit": 34,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Scripps College",
+   "state": "CA",
+   "admit": 27,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Pitzer College",
+   "state": "CA",
+   "admit": 17,
+   "ed": true,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "Bucknell University",
+   "state": "PA",
+   "admit": 33,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Richmond",
+   "state": "VA",
+   "admit": 26,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bard College",
+   "state": "NY",
+   "admit": 55,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Skidmore College",
+   "state": "NY",
+   "admit": 25,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Union College",
+   "state": "NY",
+   "admit": 34,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Trinity College",
+   "state": "CT",
+   "admit": 33,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Connecticut College",
+   "state": "CT",
+   "admit": 34,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Dickinson College",
+   "state": "PA",
+   "admit": 40,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Franklin & Marshall College",
+   "state": "PA",
+   "admit": 33,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Gettysburg College",
+   "state": "PA",
+   "admit": 49,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Lafayette College",
+   "state": "PA",
+   "admit": 41,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Muhlenberg College",
+   "state": "PA",
+   "admit": 55,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Occidental College",
+   "state": "CA",
+   "admit": 36,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Whitman College",
+   "state": "WA",
+   "admit": 56,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Reed College",
+   "state": "OR",
+   "admit": 34,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Lewis & Clark College",
+   "state": "OR",
+   "admit": 72,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Furman University",
+   "state": "SC",
+   "admit": 60,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wofford College",
+   "state": "SC",
+   "admit": 55,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Sewanee: The University of the South",
+   "state": "TN",
+   "admit": 61,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rhodes College",
+   "state": "TN",
+   "admit": 46,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Spelman College",
+   "state": "GA",
+   "admit": 43,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Morehouse College",
+   "state": "GA",
+   "admit": 55,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Denison University",
+   "state": "OH",
+   "admit": 29,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "College of Wooster",
+   "state": "OH",
+   "admit": 57,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "DePauw University",
+   "state": "IN",
+   "admit": 67,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Earlham College",
+   "state": "IN",
+   "admit": 63,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Kalamazoo College",
+   "state": "MI",
+   "admit": 79,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hillsdale College",
+   "state": "MI",
+   "admit": 36,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hope College",
+   "state": "MI",
+   "admit": 83,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Beloit College",
+   "state": "WI",
+   "admit": 66,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Lawrence University",
+   "state": "WI",
+   "admit": 64,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "St. Olaf College",
+   "state": "MN",
+   "admit": 62,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Gustavus Adolphus College",
+   "state": "MN",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Cornell College",
+   "state": "IA",
+   "admit": 62,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Knox College",
+   "state": "IL",
+   "admit": 84,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wheaton College (Illinois)",
+   "state": "IL",
+   "admit": 85,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "Wheaton College (Massachusetts)",
+   "state": "MA",
+   "admit": 68,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Mount Holyoke College",
+   "state": "MA",
+   "admit": 38,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hampshire College",
+   "state": "MA",
+   "admit": 89,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "College of the Holy Cross",
+   "state": "MA",
+   "admit": 33,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Bennington College",
+   "state": "VT",
+   "admit": 61,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Saint Michael's College",
+   "state": "VT",
+   "admit": 85,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Sarah Lawrence College",
+   "state": "NY",
+   "admit": 55,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Hobart and William Smith Colleges",
+   "state": "NY",
+   "admit": 66,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "SUNY Geneseo",
+   "state": "NY",
+   "admit": 65,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "St. Lawrence University",
+   "state": "NY",
+   "admit": 61,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Wabash College",
+   "state": "IN",
+   "admit": 63,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Centre College",
+   "state": "KY",
+   "admit": 74,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Berea College",
+   "state": "KY",
+   "admit": 33,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Rollins College",
+   "state": "FL",
+   "admit": 65,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Eckerd College",
+   "state": "FL",
+   "admit": 78,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Agnes Scott College",
+   "state": "GA",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Willamette University",
+   "state": "OR",
+   "admit": 78,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  },
+  {
+   "name": "St. John's College",
+   "state": "MD",
+   "admit": 60,
+   "ed": false,
+   "ea": null,
+   "test": "blind"
+  },
+  {
+   "name": "Goucher College",
+   "state": "MD",
+   "admit": 79,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Ursinus College",
+   "state": "PA",
+   "admit": 85,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Allegheny College",
+   "state": "PA",
+   "admit": 68,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Juniata College",
+   "state": "PA",
+   "admit": 76,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "University of Puget Sound",
+   "state": "WA",
+   "admit": 84,
+   "ed": true,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Pacific Lutheran University",
+   "state": "WA",
+   "admit": 84,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Colby-Sawyer College",
+   "state": "NH",
+   "admit": 83,
+   "ed": false,
+   "ea": null,
+   "test": "optional"
+  },
+  {
+   "name": "Saint Anselm College",
+   "state": "NH",
+   "admit": 78,
+   "ed": false,
+   "ea": "EA",
+   "test": "optional"
+  }
+ ]
+}
