@@ -1,0 +1,1540 @@
+{
+ "national": {
+  "reach": [
+   [
+    "Massachusetts Institute of Technology",
+    "MA",
+    "<1%"
+   ],
+   [
+    "California Institute of Technology",
+    "CA",
+    "<1%"
+   ],
+   [
+    "Harvard University",
+    "MA",
+    "<1%"
+   ],
+   [
+    "Stanford University",
+    "CA",
+    "<1%"
+   ],
+   [
+    "Princeton University",
+    "NJ",
+    "<1%"
+   ],
+   [
+    "Yale University",
+    "CT",
+    "<1%"
+   ],
+   [
+    "Columbia University",
+    "NY",
+    "<1%"
+   ],
+   [
+    "University of Chicago",
+    "IL",
+    "<1%"
+   ],
+   [
+    "University of Pennsylvania",
+    "PA",
+    "<1%"
+   ],
+   [
+    "Duke University",
+    "NC",
+    "<1%"
+   ],
+   [
+    "Johns Hopkins University",
+    "MD",
+    "<1%"
+   ],
+   [
+    "Brown University",
+    "RI",
+    "<1%"
+   ],
+   [
+    "Northwestern University",
+    "IL",
+    "~1%"
+   ],
+   [
+    "Cornell University",
+    "NY",
+    "~1%"
+   ],
+   [
+    "Dartmouth College",
+    "NH",
+    "~1%"
+   ],
+   [
+    "Vanderbilt University",
+    "TN",
+    "~1%"
+   ],
+   [
+    "Rice University",
+    "TX",
+    "~1%"
+   ],
+   [
+    "Washington University in St. Louis",
+    "MO",
+    "~1%"
+   ],
+   [
+    "University of Notre Dame",
+    "IN",
+    "~1%"
+   ],
+   [
+    "Georgetown University",
+    "DC",
+    "~2%"
+   ],
+   [
+    "University of California, Los Angeles",
+    "CA",
+    "~2%"
+   ],
+   [
+    "University of California, Berkeley",
+    "CA",
+    "~2%"
+   ],
+   [
+    "Carnegie Mellon University",
+    "PA",
+    "~2%"
+   ],
+   [
+    "University of Southern California",
+    "CA",
+    "~2%"
+   ],
+   [
+    "University of Michigan",
+    "MI",
+    "~2%"
+   ],
+   [
+    "New York University",
+    "NY",
+    "~3%"
+   ],
+   [
+    "Tufts University",
+    "MA",
+    "~3%"
+   ],
+   [
+    "University of North Carolina at Chapel Hill",
+    "NC",
+    "~3%"
+   ],
+   [
+    "Boston College",
+    "MA",
+    "~4%"
+   ],
+   [
+    "University of Virginia",
+    "VA",
+    "~4%"
+   ],
+   [
+    "University of Florida",
+    "FL",
+    "~4%"
+   ],
+   [
+    "Boston University",
+    "MA",
+    "~5%"
+   ],
+   [
+    "University of California, San Diego",
+    "CA",
+    "~5%"
+   ],
+   [
+    "University of California, Irvine",
+    "CA",
+    "~6%"
+   ],
+   [
+    "University of California, Santa Barbara",
+    "CA",
+    "~6%"
+   ],
+   [
+    "University of California, Davis",
+    "CA",
+    "~7%"
+   ],
+   [
+    "University of Rochester",
+    "NY",
+    "~7%"
+   ],
+   [
+    "Case Western Reserve University",
+    "OH",
+    "~8%"
+   ],
+   [
+    "Northeastern University",
+    "MA",
+    "~8%"
+   ],
+   [
+    "University of Wisconsin–Madison",
+    "WI",
+    "~9%"
+   ],
+   [
+    "University of Illinois Urbana-Champaign",
+    "IL",
+    "~9%"
+   ],
+   [
+    "University of Washington",
+    "WA",
+    "~10%"
+   ],
+   [
+    "University of Texas at Austin",
+    "TX",
+    "~10%"
+   ],
+   [
+    "Lehigh University",
+    "PA",
+    "~11%"
+   ],
+   [
+    "Rensselaer Polytechnic Institute",
+    "NY",
+    "~12%"
+   ],
+   [
+    "Brandeis University",
+    "MA",
+    "~13%"
+   ],
+   [
+    "Tulane University",
+    "LA",
+    "~13%"
+   ],
+   [
+    "Syracuse University",
+    "NY",
+    "~15%"
+   ],
+   [
+    "Fordham University",
+    "NY",
+    "~16%"
+   ],
+   [
+    "Rutgers University–New Brunswick",
+    "NJ",
+    "~18%"
+   ]
+  ],
+  "match": [
+   [
+    "University of Maryland, College Park",
+    "MD",
+    "~22%"
+   ],
+   [
+    "Clemson University",
+    "SC",
+    "~24%"
+   ],
+   [
+    "University of Pittsburgh",
+    "PA",
+    "~25%"
+   ],
+   [
+    "Stony Brook University",
+    "NY",
+    "~26%"
+   ],
+   [
+    "Florida State University",
+    "FL",
+    "~26%"
+   ],
+   [
+    "North Carolina State University",
+    "NC",
+    "~27%"
+   ],
+   [
+    "University of Connecticut",
+    "CT",
+    "~28%"
+   ],
+   [
+    "Purdue University",
+    "IN",
+    "~28%"
+   ],
+   [
+    "Rutgers University–Newark",
+    "NJ",
+    "~29%"
+   ],
+   [
+    "Virginia Commonwealth University",
+    "VA",
+    "~30%"
+   ],
+   [
+    "Ohio State University",
+    "OH",
+    "~30%"
+   ],
+   [
+    "University of Minnesota Twin Cities",
+    "MN",
+    "~31%"
+   ],
+   [
+    "Michigan State University",
+    "MI",
+    "~32%"
+   ],
+   [
+    "Indiana University Bloomington",
+    "IN",
+    "~33%"
+   ],
+   [
+    "University of Massachusetts Amherst",
+    "MA",
+    "~33%"
+   ],
+   [
+    "University of Colorado Boulder",
+    "CO",
+    "~34%"
+   ],
+   [
+    "George Washington University",
+    "DC",
+    "~34%"
+   ],
+   [
+    "Virginia Tech",
+    "VA",
+    "~35%"
+   ],
+   [
+    "University of Delaware",
+    "DE",
+    "~35%"
+   ],
+   [
+    "University of Denver",
+    "CO",
+    "~36%"
+   ],
+   [
+    "Marquette University",
+    "WI",
+    "~37%"
+   ],
+   [
+    "Saint Louis University",
+    "MO",
+    "~38%"
+   ],
+   [
+    "American University",
+    "DC",
+    "~38%"
+   ],
+   [
+    "Drexel University",
+    "PA",
+    "~39%"
+   ],
+   [
+    "University of Vermont",
+    "VT",
+    "~40%"
+   ],
+   [
+    "Loyola University Chicago",
+    "IL",
+    "~41%"
+   ],
+   [
+    "University of Iowa",
+    "IA",
+    "~42%"
+   ],
+   [
+    "University of Oregon",
+    "OR",
+    "~42%"
+   ],
+   [
+    "University of Tennessee, Knoxville",
+    "TN",
+    "~43%"
+   ],
+   [
+    "University of South Carolina",
+    "SC",
+    "~44%"
+   ],
+   [
+    "DePaul University",
+    "IL",
+    "~45%"
+   ],
+   [
+    "University of Dayton",
+    "OH",
+    "~45%"
+   ],
+   [
+    "Miami University",
+    "OH",
+    "~46%"
+   ],
+   [
+    "Temple University",
+    "PA",
+    "~46%"
+   ],
+   [
+    "University of Missouri",
+    "MO",
+    "~47%"
+   ],
+   [
+    "Colorado State University",
+    "CO",
+    "~48%"
+   ],
+   [
+    "Washington State University",
+    "WA",
+    "~48%"
+   ],
+   [
+    "University of San Francisco",
+    "CA",
+    "~49%"
+   ],
+   [
+    "Seton Hall University",
+    "NJ",
+    "~49%"
+   ],
+   [
+    "Duquesne University",
+    "PA",
+    "~50%"
+   ],
+   [
+    "University of Central Florida",
+    "FL",
+    "~50%"
+   ],
+   [
+    "University of Nebraska–Lincoln",
+    "NE",
+    "~51%"
+   ],
+   [
+    "University of New Hampshire",
+    "NH",
+    "~51%"
+   ],
+   [
+    "Hofstra University",
+    "NY",
+    "~52%"
+   ],
+   [
+    "University of South Florida",
+    "FL",
+    "~52%"
+   ],
+   [
+    "University of Kentucky",
+    "KY",
+    "~53%"
+   ],
+   [
+    "Oregon State University",
+    "OR",
+    "~53%"
+   ],
+   [
+    "Clark University",
+    "MA",
+    "~54%"
+   ],
+   [
+    "University of Kansas",
+    "KS",
+    "~54%"
+   ],
+   [
+    "Illinois Institute of Technology",
+    "IL",
+    "~55%"
+   ]
+  ],
+  "safety": [
+   [
+    "University of North Carolina at Charlotte",
+    "NC",
+    "~62%"
+   ],
+   [
+    "George Mason University",
+    "VA",
+    "~63%"
+   ],
+   [
+    "Florida International University",
+    "FL",
+    "~63%"
+   ],
+   [
+    "University of Cincinnati",
+    "OH",
+    "~64%"
+   ],
+   [
+    "Louisiana State University",
+    "LA",
+    "~65%"
+   ],
+   [
+    "University of Utah",
+    "UT",
+    "~65%"
+   ],
+   [
+    "University of Houston",
+    "TX",
+    "~66%"
+   ],
+   [
+    "University of Alabama at Birmingham",
+    "AL",
+    "~66%"
+   ],
+   [
+    "Illinois State University",
+    "IL",
+    "~67%"
+   ],
+   [
+    "Ball State University",
+    "IN",
+    "~67%"
+   ],
+   [
+    "Texas Tech University",
+    "TX",
+    "~68%"
+   ],
+   [
+    "University of Louisville",
+    "KY",
+    "~68%"
+   ],
+   [
+    "Old Dominion University",
+    "VA",
+    "~69%"
+   ],
+   [
+    "Oklahoma State University",
+    "OK",
+    "~69%"
+   ],
+   [
+    "University of Oklahoma",
+    "OK",
+    "~70%"
+   ],
+   [
+    "University of Arkansas",
+    "AR",
+    "~70%"
+   ],
+   [
+    "East Carolina University",
+    "NC",
+    "~71%"
+   ],
+   [
+    "West Virginia University",
+    "WV",
+    "~72%"
+   ],
+   [
+    "Kansas State University",
+    "KS",
+    "~72%"
+   ],
+   [
+    "University of Mississippi",
+    "MS",
+    "~73%"
+   ],
+   [
+    "Mississippi State University",
+    "MS",
+    "~73%"
+   ],
+   [
+    "University of Nevada, Reno",
+    "NV",
+    "~74%"
+   ],
+   [
+    "University of North Texas",
+    "TX",
+    "~74%"
+   ],
+   [
+    "Kent State University",
+    "OH",
+    "~75%"
+   ],
+   [
+    "University of Toledo",
+    "OH",
+    "~75%"
+   ],
+   [
+    "University of Memphis",
+    "TN",
+    "~76%"
+   ],
+   [
+    "Middle Tennessee State University",
+    "TN",
+    "~76%"
+   ],
+   [
+    "University of New Mexico",
+    "NM",
+    "~77%"
+   ],
+   [
+    "New Mexico State University",
+    "NM",
+    "~77%"
+   ],
+   [
+    "Texas State University",
+    "TX",
+    "~78%"
+   ],
+   [
+    "University of Texas at San Antonio",
+    "TX",
+    "~78%"
+   ],
+   [
+    "Arizona State University",
+    "AZ",
+    "~80%"
+   ],
+   [
+    "University of Arizona",
+    "AZ",
+    "~80%"
+   ],
+   [
+    "University of Alabama",
+    "AL",
+    "~80%"
+   ],
+   [
+    "University of Nevada, Las Vegas",
+    "NV",
+    "~81%"
+   ],
+   [
+    "Portland State University",
+    "OR",
+    "~81%"
+   ],
+   [
+    "University of Wisconsin–Milwaukee",
+    "WI",
+    "~82%"
+   ],
+   [
+    "Wayne State University",
+    "MI",
+    "~82%"
+   ],
+   [
+    "Western Michigan University",
+    "MI",
+    "~83%"
+   ],
+   [
+    "Central Michigan University",
+    "MI",
+    "~83%"
+   ],
+   [
+    "University of Texas at El Paso",
+    "TX",
+    "~84%"
+   ],
+   [
+    "Wichita State University",
+    "KS",
+    "~85%"
+   ],
+   [
+    "University of Missouri–Kansas City",
+    "MO",
+    "~85%"
+   ],
+   [
+    "Boise State University",
+    "ID",
+    "~86%"
+   ],
+   [
+    "University of Idaho",
+    "ID",
+    "~86%"
+   ],
+   [
+    "Utah State University",
+    "UT",
+    "~87%"
+   ],
+   [
+    "University of Wyoming",
+    "WY",
+    "~88%"
+   ],
+   [
+    "Montana State University",
+    "MT",
+    "~88%"
+   ],
+   [
+    "University of Montana",
+    "MT",
+    "~89%"
+   ],
+   [
+    "Wright State University",
+    "OH",
+    "~90%"
+   ]
+  ]
+ },
+ "instate_ga": {
+  "reach": [
+   [
+    "Georgia Institute of Technology",
+    "GA",
+    "~2%"
+   ],
+   [
+    "Emory University",
+    "GA",
+    "~3%"
+   ],
+   [
+    "University of Georgia",
+    "GA",
+    "~12%"
+   ]
+  ],
+  "match": [
+   [
+    "Georgia State University",
+    "GA",
+    "~40%"
+   ],
+   [
+    "Mercer University",
+    "GA",
+    "~45%"
+   ],
+   [
+    "Augusta University",
+    "GA",
+    "~48%"
+   ],
+   [
+    "Georgia College & State University",
+    "GA",
+    "~50%"
+   ],
+   [
+    "Kennesaw State University",
+    "GA",
+    "~55%"
+   ]
+  ],
+  "safety": [
+   [
+    "Georgia Southern University",
+    "GA",
+    "~62%"
+   ],
+   [
+    "University of North Georgia",
+    "GA",
+    "~65%"
+   ],
+   [
+    "Valdosta State University",
+    "GA",
+    "~68%"
+   ],
+   [
+    "Columbus State University",
+    "GA",
+    "~72%"
+   ],
+   [
+    "Georgia Southwestern State University",
+    "GA",
+    "~78%"
+   ],
+   [
+    "Savannah State University",
+    "GA",
+    "~80%"
+   ],
+   [
+    "Clayton State University",
+    "GA",
+    "~80%"
+   ],
+   [
+    "Albany State University",
+    "GA",
+    "~82%"
+   ],
+   [
+    "Middle Georgia State University",
+    "GA",
+    "~85%"
+   ],
+   [
+    "Fort Valley State University",
+    "GA",
+    "~85%"
+   ],
+   [
+    "Dalton State College",
+    "GA",
+    "~88%"
+   ],
+   [
+    "Gordon State College",
+    "GA",
+    "~90%"
+   ]
+  ]
+ },
+ "lac": {
+  "reach": [
+   [
+    "Williams College",
+    "MA",
+    "~2%"
+   ],
+   [
+    "Amherst College",
+    "MA",
+    "~2%"
+   ],
+   [
+    "Pomona College",
+    "CA",
+    "~2%"
+   ],
+   [
+    "Swarthmore College",
+    "PA",
+    "~2%"
+   ],
+   [
+    "Bowdoin College",
+    "ME",
+    "~3%"
+   ],
+   [
+    "Wellesley College",
+    "MA",
+    "~3%"
+   ],
+   [
+    "Middlebury College",
+    "VT",
+    "~4%"
+   ],
+   [
+    "Carleton College",
+    "MN",
+    "~5%"
+   ],
+   [
+    "Claremont McKenna College",
+    "CA",
+    "~5%"
+   ],
+   [
+    "Davidson College",
+    "NC",
+    "~6%"
+   ],
+   [
+    "Hamilton College",
+    "NY",
+    "~7%"
+   ],
+   [
+    "Colby College",
+    "ME",
+    "~7%"
+   ],
+   [
+    "Vassar College",
+    "NY",
+    "~8%"
+   ],
+   [
+    "Colgate University",
+    "NY",
+    "~8%"
+   ],
+   [
+    "Wesleyan University",
+    "CT",
+    "~9%"
+   ],
+   [
+    "Barnard College",
+    "NY",
+    "~9%"
+   ],
+   [
+    "Haverford College",
+    "PA",
+    "~10%"
+   ],
+   [
+    "Grinnell College",
+    "IA",
+    "~12%"
+   ],
+   [
+    "Bates College",
+    "ME",
+    "~13%"
+   ],
+   [
+    "Macalester College",
+    "MN",
+    "~15%"
+   ],
+   [
+    "Kenyon College",
+    "OH",
+    "~16%"
+   ],
+   [
+    "Oberlin College",
+    "OH",
+    "~18%"
+   ],
+   [
+    "Occidental College",
+    "CA",
+    "~18%"
+   ],
+   [
+    "Skidmore College",
+    "NY",
+    "~20%"
+   ]
+  ],
+  "match": [
+   [
+    "Denison University",
+    "OH",
+    "~28%"
+   ],
+   [
+    "Dickinson College",
+    "PA",
+    "~30%"
+   ],
+   [
+    "Trinity College",
+    "CT",
+    "~33%"
+   ],
+   [
+    "Gettysburg College",
+    "PA",
+    "~35%"
+   ],
+   [
+    "Franklin & Marshall College",
+    "PA",
+    "~35%"
+   ],
+   [
+    "Lawrence University",
+    "WI",
+    "~40%"
+   ],
+   [
+    "St. Olaf College",
+    "MN",
+    "~42%"
+   ],
+   [
+    "Wheaton College",
+    "MA",
+    "~45%"
+   ],
+   [
+    "Muhlenberg College",
+    "PA",
+    "~48%"
+   ],
+   [
+    "College of Wooster",
+    "OH",
+    "~50%"
+   ],
+   [
+    "Beloit College",
+    "WI",
+    "~52%"
+   ],
+   [
+    "Knox College",
+    "IL",
+    "~52%"
+   ],
+   [
+    "Hope College",
+    "MI",
+    "~53%"
+   ],
+   [
+    "Ursinus College",
+    "PA",
+    "~54%"
+   ],
+   [
+    "Allegheny College",
+    "PA",
+    "~55%"
+   ]
+  ],
+  "safety": [
+   [
+    "Hobart and William Smith Colleges",
+    "NY",
+    "~62%"
+   ],
+   [
+    "Juniata College",
+    "PA",
+    "~65%"
+   ],
+   [
+    "Earlham College",
+    "IN",
+    "~66%"
+   ],
+   [
+    "Goucher College",
+    "MD",
+    "~68%"
+   ],
+   [
+    "Cornell College",
+    "IA",
+    "~68%"
+   ],
+   [
+    "Coe College",
+    "IA",
+    "~70%"
+   ],
+   [
+    "Susquehanna University",
+    "PA",
+    "~70%"
+   ],
+   [
+    "Wabash College",
+    "IN",
+    "~72%"
+   ],
+   [
+    "Washington & Jefferson College",
+    "PA",
+    "~72%"
+   ],
+   [
+    "Hiram College",
+    "OH",
+    "~72%"
+   ],
+   [
+    "Millsaps College",
+    "MS",
+    "~74%"
+   ],
+   [
+    "Wittenberg University",
+    "OH",
+    "~75%"
+   ],
+   [
+    "Randolph College",
+    "VA",
+    "~78%"
+   ],
+   [
+    "Hartwick College",
+    "NY",
+    "~78%"
+   ],
+   [
+    "Guilford College",
+    "NC",
+    "~80%"
+   ]
+  ]
+ },
+ "ed": [
+  [
+   "Duke University",
+   "NC",
+   "<1%",
+   "~1%",
+   ""
+  ],
+  [
+   "University of Pennsylvania",
+   "PA",
+   "<1%",
+   "~2%",
+   ""
+  ],
+  [
+   "Northwestern University",
+   "IL",
+   "~1%",
+   "~2%",
+   ""
+  ],
+  [
+   "Cornell University",
+   "NY",
+   "~1%",
+   "~2%",
+   ""
+  ],
+  [
+   "Vanderbilt University",
+   "TN",
+   "~1%",
+   "~2%",
+   ""
+  ],
+  [
+   "Washington University in St. Louis",
+   "MO",
+   "~1%",
+   "~2%",
+   ""
+  ],
+  [
+   "New York University",
+   "NY",
+   "~3%",
+   "~6%",
+   ""
+  ],
+  [
+   "Tufts University",
+   "MA",
+   "~3%",
+   "~5%",
+   ""
+  ],
+  [
+   "Boston College",
+   "MA",
+   "~4%",
+   "~7%",
+   ""
+  ],
+  [
+   "Boston University",
+   "MA",
+   "~5%",
+   "~9%",
+   ""
+  ],
+  [
+   "University of Rochester",
+   "NY",
+   "~7%",
+   "~13%",
+   ""
+  ],
+  [
+   "Case Western Reserve University",
+   "OH",
+   "~8%",
+   "~15%",
+   ""
+  ],
+  [
+   "Lehigh University",
+   "PA",
+   "~11%",
+   "~20%",
+   "★ Recommend"
+  ],
+  [
+   "Rensselaer Polytechnic Institute",
+   "NY",
+   "~12%",
+   "~22%",
+   "★ Recommend"
+  ],
+  [
+   "Brandeis University",
+   "MA",
+   "~13%",
+   "~24%",
+   "★ Recommend"
+  ],
+  [
+   "Tulane University",
+   "LA",
+   "~13%",
+   "~24%",
+   "★ Recommend"
+  ],
+  [
+   "Syracuse University",
+   "NY",
+   "~15%",
+   "~28%",
+   "★ Recommend"
+  ],
+  [
+   "Fordham University",
+   "NY",
+   "~16%",
+   "~30%",
+   "★ Recommend"
+  ],
+  [
+   "Dickinson College",
+   "PA",
+   "~30%",
+   "~52%",
+   "★★ Strongly Recommend"
+  ],
+  [
+   "University of Denver",
+   "CO",
+   "~36%",
+   "~60%",
+   "★★ Strongly Recommend"
+  ],
+  [
+   "George Washington University",
+   "DC",
+   "~34%",
+   "~55%",
+   "★★ Strongly Recommend"
+  ],
+  [
+   "Marquette University",
+   "WI",
+   "~37%",
+   "~58%",
+   "★★ Strongly Recommend"
+  ],
+  [
+   "American University",
+   "DC",
+   "~38%",
+   "~60%",
+   "★★ Strongly Recommend"
+  ],
+  [
+   "Drexel University",
+   "PA",
+   "~39%",
+   "~62%",
+   "★★ Strongly Recommend"
+  ]
+ ],
+ "ea": [
+  [
+   "Massachusetts Institute of Technology",
+   "MA",
+   "<1%",
+   "Unrestricted EA — SAT required"
+  ],
+  [
+   "Harvard University",
+   "MA",
+   "<1%",
+   "Restrictive REA — no other private EA/ED"
+  ],
+  [
+   "Stanford University",
+   "CA",
+   "<1%",
+   "Restrictive REA — no other private EA/ED"
+  ],
+  [
+   "Yale University",
+   "CT",
+   "<1%",
+   "Restrictive REA — no other private EA/ED"
+  ],
+  [
+   "Princeton University",
+   "NJ",
+   "<1%",
+   "Restrictive REA (SCEA)"
+  ],
+  [
+   "University of Notre Dame",
+   "IN",
+   "~1%",
+   "Restrictive EA"
+  ],
+  [
+   "Georgetown University",
+   "DC",
+   "~2%",
+   "Restrictive EA — SAT required"
+  ],
+  [
+   "Georgia Institute of Technology",
+   "GA",
+   "~2%",
+   "EA — SAT required"
+  ],
+  [
+   "University of Michigan",
+   "MI",
+   "~2%",
+   "Unrestricted EA"
+  ],
+  [
+   "University of North Carolina at Chapel Hill",
+   "NC",
+   "~3%",
+   "Unrestricted EA"
+  ],
+  [
+   "University of Virginia",
+   "VA",
+   "~4%",
+   "Unrestricted EA"
+  ],
+  [
+   "University of Florida",
+   "FL",
+   "~4%",
+   "Priority/EA — SAT required"
+  ],
+  [
+   "Boston College",
+   "MA",
+   "~4%",
+   "Restrictive EA (also offers ED)"
+  ],
+  [
+   "Northeastern University",
+   "MA",
+   "~8%",
+   "EA (also offers ED)"
+  ],
+  [
+   "University of Wisconsin–Madison",
+   "WI",
+   "~9%",
+   "Unrestricted EA"
+  ],
+  [
+   "University of Illinois Urbana-Champaign",
+   "IL",
+   "~9%",
+   "EA — priority deadline"
+  ],
+  [
+   "Villanova University",
+   "PA",
+   "~10%",
+   "EA (also offers ED)"
+  ],
+  [
+   "University of Georgia",
+   "GA",
+   "~12%",
+   "Unrestricted EA — SAT required"
+  ],
+  [
+   "University of Miami",
+   "FL",
+   "~14%",
+   "EA (also offers ED)"
+  ],
+  [
+   "Fordham University",
+   "NY",
+   "~16%",
+   "EA (also offers ED)"
+  ],
+  [
+   "Purdue University",
+   "IN",
+   "~28%",
+   "EA — non-binding"
+  ],
+  [
+   "Ohio State University",
+   "OH",
+   "~30%",
+   "EA — priority deadline"
+  ],
+  [
+   "University of Minnesota Twin Cities",
+   "MN",
+   "~31%",
+   "EA / Rolling"
+  ],
+  [
+   "Michigan State University",
+   "MI",
+   "~32%",
+   "EA / Rolling"
+  ],
+  [
+   "Indiana University Bloomington",
+   "IN",
+   "~33%",
+   "EA — non-binding"
+  ],
+  [
+   "University of Denver",
+   "CO",
+   "~36%",
+   "EA (also offers ED)"
+  ],
+  [
+   "Marquette University",
+   "WI",
+   "~37%",
+   "EA / Rolling"
+  ],
+  [
+   "Saint Louis University",
+   "MO",
+   "~38%",
+   "EA — demonstrated interest matters"
+  ],
+  [
+   "American University",
+   "DC",
+   "~38%",
+   "EA (also offers ED)"
+  ],
+  [
+   "University of Tennessee, Knoxville",
+   "TN",
+   "~43%",
+   "EA — priority deadline"
+  ],
+  [
+   "University of South Carolina",
+   "SC",
+   "~44%",
+   "EA — priority deadline"
+  ],
+  [
+   "Auburn University",
+   "AL",
+   "~50%",
+   "Rolling/EA"
+  ],
+  [
+   "University of Kentucky",
+   "KY",
+   "~53%",
+   "Rolling/EA"
+  ],
+  [
+   "University of Oklahoma",
+   "OK",
+   "~70%",
+   "Rolling/EA"
+  ],
+  [
+   "University of Alabama",
+   "AL",
+   "~80%",
+   "EA / Rolling"
+  ],
+  [
+   "University of Arizona",
+   "AZ",
+   "~80%",
+   "Rolling/EA"
+  ],
+  [
+   "Arizona State University",
+   "AZ",
+   "~80%",
+   "Rolling admission"
+  ]
+ ]
+}
